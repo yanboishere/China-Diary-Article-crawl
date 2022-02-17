@@ -123,9 +123,9 @@ def get_content(name, url):
 
 
 if __name__ == '__main__':
-    max_pag = int(input("请输入爬取页面长度："))  # 10  # 爬取1-10页文章
+    max_pag = int(input("烟波提醒您 请输入爬取页面长度："))  # 10  # 爬取1-10页文章
     num = 1  # 计数器
-    key = input("请输入关键词(多个词中间用英文逗号分隔)：")
+    key = input("烟波提醒您 请输入关键词(如果您使用多个词请中间用英文逗号分隔)：")
     danci = key.split(',')
     url = get_url(danci, max_pag)  # help为关键词，可以任意修改
     for content_url in url:
